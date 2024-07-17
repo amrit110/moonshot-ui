@@ -44,7 +44,6 @@ export const authOptions: NextAuthOptions = {
   },
   pages: {
     signIn: '/login',
-    signOut: '/login',
   },
   callbacks: {
     session: ({ session, token }) => {
@@ -58,10 +57,9 @@ export const authOptions: NextAuthOptions = {
     },
     jwt: ({ token, user }) => {
       if (user) {
-        const u = user as unknown as any;
         return {
           ...token,
-          id: u.id,
+          id: user.id,
         };
       }
       return token;
