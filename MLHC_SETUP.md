@@ -30,14 +30,17 @@ prisma generate
 
 Use the ``add_user.py`` to add users with email and password details.
 
-6. Build the app
+6. Set the URL and port in the .env.local file. It is important that the URL to the app is correctly set in the .env.local
+file to make sure that the routing works correctly.
+
+7. Build the app
 
 ```bash
 cd moonshot-ui
 npm run build
 ```
 
-7. From the outer directory (i.e. project folder), run:
+8. From the outer directory (i.e. project folder), run:
 
 ```bash
 python3 -m moonshot web
