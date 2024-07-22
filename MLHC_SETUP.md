@@ -13,6 +13,12 @@ python3 -m pip install --upgrade pip
 python3 -m pip install aiverify-moonshot
 ```
 2. Make sure you have all the other prerequisites installed. Check the main README.md of the project for details.
+
+```bash
+cd moonshot-ui
+npm install
+```
+
 3. Initialize and setup prisma DB for managing users.
 
 ```bash
