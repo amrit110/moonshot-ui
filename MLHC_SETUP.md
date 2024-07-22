@@ -30,8 +30,9 @@ prisma generate
 
 Use the ``add_user.py`` to add users with email and password details.
 
-6. Set the URL and port in the .env.local file. It is important that the URL to the app is correctly set in the .env.local
-file to make sure that the routing works correctly.
+6. Set the URL and port in the ``.env.local`` file. It is important that the URL to the app is correctly set in the .env.local
+file to make sure that the routing works correctly. Specifically, the ``NEXT_PUBLIC_BASE_URL`` and ``NEXTAUTH_URL`` needs to be
+updated to the URL of the app.
 
 7. Build the app
 
