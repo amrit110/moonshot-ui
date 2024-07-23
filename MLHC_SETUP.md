@@ -10,7 +10,7 @@
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install --upgrade pip
-python3 -m pip install aiverify-moonshot
+python3 -m pip install aiverify-moonshot prisma bcrypt
 ```
 3. Make sure you have all the other prerequisites installed. Check the main README.md of the project for details.
 
@@ -23,7 +23,6 @@ npm install
 
 ```bash
 prisma migrate dev --name init
-prisma generate
 ```
 
 5. Add users
