@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run prisma:generate:js && next build",
-    "start": "next start",
+    "start": "next start --port 4002",
     "start-trace": "node --trace-warnings node_modules/.bin/next",
     "lint": "next lint --quiet && npm run tsc",
     "lint:fix": "next lint --fix",
