@@ -110,6 +110,7 @@ function SelectList(props: SelectListProps) {
             const isHighlighted = index === firstMatchIndex;
             return (
               <div
+                // @ts-ignore
                 ref={(el) => (itemRefs.current[index] = el)}
                 key={item.id}
                 className={`p-2 cursor-pointer border-b border-lightGray ${

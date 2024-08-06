@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/lib/provider';
-import type { Metadata } from 'next';
 import SignOutButton from './components/sign-out-button';
+import type { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
 
